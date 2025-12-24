@@ -5,13 +5,6 @@ fn find_password(input: Vec<i32>) -> i32 {
         current_value += value;
 
         current_value %= 100;
-        // println!(
-        //     "{0} {current_value}",
-        //     match value.is_positive() {
-        //         true => format!("R{}", value),
-        //         false => format!("L{}", value.abs()),
-        //     }
-        // );
         if current_value == 0 {
             total_times += 1;
         }
